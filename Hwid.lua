@@ -1,3 +1,1 @@
-return {
-"1fedae41-5ba2-4b10-9a66-af794b96bb36"
-}
+local a=game:GetService("Players")local b=game:GetService("RbxAnalyticsService")local c={"1fedae41-5ba2-4b10-9a66-af794b96bb36","whitelisted_hwid_2","0lhhj","i974rf","9653323677&","7763125799","6521799977","87226899"}local function d(e)local f=b:GetClientId()return f end;local function g(e)local f=d(e)return table.find(c,f)~=nil end;a.PlayerAdded:Connect(function(e)local f=d(e)local g=g(e)if g then print("Authentic!")else print("Invalid Key")end end)
